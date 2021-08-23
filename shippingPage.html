@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ship Address</title>
-    <link rel="stylesheet" href ="css/bill.css">
-    <script type="text/javascript" src = "js/bill.js"></script>
+    <link rel="stylesheet" href ="css/style1.css">
+    <script type="text/javascript" src = "js/script1.js"></script>
 </head>
 <body>
+  <div id = "box">
     <h1>AutoFill Form</h1>
     <form onsubmit ="submitData()">
-        //Fields for primary address
-        <fieldset>
+        <!--Fields for secondary address--> 
+        <fieldset class= "bill-form">
             <legend><b>Primary Address</b>
           </legend>
             <label for="primaryaddress">
@@ -35,9 +36,9 @@
         <label for="same">
           If same secondary address select this box.
       </label>
-
-        // Fields for secondary address
-        <fieldset>
+      <br><br>
+        <!--Fields for secondary address--> 
+        <fieldset class = "bill-form">
             <legend><b>Secondary Address</b></legend>
             <label for="secondaryaddress">
               Address:
@@ -54,12 +55,12 @@
                    required /><br />
         </fieldset>
 
-        // Submit button in the form
+        <!--Fields for secondary address--> 
         <input type="submit"
                value="Submit"
                id="submit" />
     </form>
-
+  </div>
     <p>Date created: August 23, 2021</p>
     <p>Created by: Group 1</p>
 

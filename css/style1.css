@@ -7,3 +7,32 @@ input:focus{
 fieldset{
     margin-bottom: 4%;
 }
+
+#submit{
+    width: 20%;
+    height: 30px;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    font-style: medium;
+    border: none;
+    cursor: pointer;
+}
+
+#box {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(216, 93, 93);
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.bill-form{
+    text-align: left;
+}
+
+#same{
+    text-align: center;
+}
