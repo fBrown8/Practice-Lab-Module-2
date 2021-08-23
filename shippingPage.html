@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="css/bill.css">
+    <script type="text/javascript" src = "js/bill.js"></script>
+</head>
+<body>
+    <h1>AutoFill Form</h1>
+    <form onsubmit ="submitData()">
+        //Fields for primary address
+        <fieldset>
+            <legend><b>Primary Address</b>
+          </legend>
+            <label for="primaryaddress">
+              Address:</label>
+            <input type="text" 
+                   name="Address" 
+                   id="primaryaddress" 
+                   required /><br />
+            <label for="primaryzip">Zip code:</label>
+            <input type="text" 
+                   name="Zip code" 
+                   id="primaryzip"  
+                   required /><br />
+        </fieldset>
+
+        <input type="checkbox" 
+               id="same" 
+               name="same" 
+               onchange="addressFunction()" />
+        <label for="same">
+          If same secondary address select this box.
+      </label>
+
+        // Fields for secondary address
+        <fieldset>
+            <legend><b>Secondary Address</b></legend>
+            <label for="secondaryaddress">
+              Address:
+          </label>
+            <input type="text" 
+                   name="Address" 
+                   id="secondaryaddress" 
+                   required /><br />
+            <label for="secondaryzip">
+              Zip code:</label>
+            <input type="text" 
+                   name="Zip code" 
+                   id="secondaryzip"
+                   required /><br />
+        </fieldset>
+
+        // Submit button in the form
+        <input type="submit"
+               value="Submit"
+               id="submit" />
+    </form>
+
+</body>
+</html>
